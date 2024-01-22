@@ -26,7 +26,7 @@
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-runtime-def/boot/0.0.2";
+      url = "github:pythoneda-runtime-def/boot/0.0.3";
     };
     pythoneda-runtime-boot-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -34,14 +34,14 @@
       inputs.pythoneda-runtime-boot.follows = "pythoneda-runtime-boot";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.1";
+      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.2";
     };
     pythoneda-shared-application = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-shared-def/application/0.0.43";
+      url = "github:pythoneda-shared-def/application/0.0.44";
     };
     pythoneda-shared-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -66,7 +66,7 @@
         pname = "${org}-${repo}";
         pythonpackage = builtins.replaceStrings [ "-" ] [ "." ] pname;
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
-        entrypoint = "rydnr_app";
+        entrypoint = "boot_app";
         description = "Application layer for pythoneda-runtime/boot";
         license = pkgs.lib.licenses.gpl3;
         homepage = "https://github.com/${org}/${repo}";
@@ -173,6 +173,7 @@
               substituteInPlace /build/$sourceRoot/entrypoint.sh \
                 --replace "@SOURCE@" "$out/bin/${entrypoint}.sh" \
                 --replace "@PYTHONPATH@" "$PYTHONPATH" \
+                --replace "@CUSTOM_CONTENT@" "" \
                 --replace "@ENTRYPOINT@" "$out/lib/python${pythonMajorMinorVersion}/site-packages/${package}/${entrypoint}.py"
             '';
 
