@@ -26,7 +26,7 @@
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-runtime-def/boot/0.0.4";
+      url = "github:pythoneda-runtime-def/boot/0.0.5";
     };
     pythoneda-runtime-boot-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -34,14 +34,14 @@
       inputs.pythoneda-runtime-boot.follows = "pythoneda-runtime-boot";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.3";
+      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.4";
     };
     pythoneda-shared-application = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-shared-def/application/0.0.46";
+      url = "github:pythoneda-shared-def/application/0.0.48";
     };
     pythoneda-shared-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -52,7 +52,7 @@
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
-      url = "github:pythoneda-shared-def/domain/0.0.27";
+      url = "github:pythoneda-shared-def/domain/0.0.28";
     };
   };
   outputs = inputs:
@@ -61,8 +61,8 @@
       let
         org = "pythoneda-runtime";
         repo = "boot-application";
-        version = "0.0.1";
-        sha256 = "0s2wawzyz1annicms4s540fqsm0666i1r35l5bw5sl38dxj8bh77";
+        version = "0.0.2";
+        sha256 = "18clj8nyxislzi8mf90shmqy4aagv4nwm368yijdafj9sm4yprp8";
         pname = "${org}-${repo}";
         pythonpackage = builtins.replaceStrings [ "-" ] [ "." ] pname;
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
