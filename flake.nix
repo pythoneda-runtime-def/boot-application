@@ -26,7 +26,7 @@
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-runtime-def/boot/0.0.5";
+      url = "github:pythoneda-runtime-def/boot/0.0.6";
     };
     pythoneda-runtime-boot-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -34,14 +34,14 @@
       inputs.pythoneda-runtime-boot.follows = "pythoneda-runtime-boot";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.4";
+      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.5";
     };
     pythoneda-shared-application = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows = "pythoneda-shared-domain";
-      url = "github:pythoneda-shared-def/application/0.0.48";
+      url = "github:pythoneda-shared-def/application/0.0.49";
     };
     pythoneda-shared-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -52,7 +52,7 @@
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-banner.follows = "pythoneda-shared-banner";
-      url = "github:pythoneda-shared-def/domain/0.0.28";
+      url = "github:pythoneda-shared-def/domain/0.0.30";
     };
   };
   outputs = inputs:
