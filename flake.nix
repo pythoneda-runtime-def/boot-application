@@ -28,7 +28,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/boot/0.0.36";
+      url = "github:pythoneda-runtime-def/boot/0.0.37";
     };
     pythoneda-runtime-boot-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -47,7 +47,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/application/0.0.95";
+      url = "github:pythoneda-shared-pythonlang-def/application/0.0.96";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
