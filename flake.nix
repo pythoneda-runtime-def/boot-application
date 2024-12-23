@@ -28,7 +28,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/boot/0.0.43";
+      url = "github:pythoneda-runtime-def/boot/0.0.45";
     };
     pythoneda-runtime-boot-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -38,7 +38,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.42";
+      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.44";
     };
     pythoneda-shared-pythonlang-application = {
       inputs.flake-utils.follows = "flake-utils";
@@ -47,7 +47,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/application/0.0.103";
+      url = "github:pythoneda-shared-pythonlang-def/application/0.0.104";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -59,7 +59,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.107";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.108";
     };
   };
   outputs = inputs:
@@ -68,8 +68,8 @@
       let
         org = "pythoneda-runtime";
         repo = "boot-application";
-        version = "0.0.3";
-        sha256 = "04483jmr90gkj76gaqh6bl74s4qs8fnbmcdmqp9mgcwrbwj5x4gi";
+        version = "0.0.4";
+        sha256 = "0gbxa1xgqmip81vlws7vh08ri55agpb0izbia71d1zpmdw9i3rka";
         pname = "${org}-${repo}";
         pythonpackage = builtins.replaceStrings [ "-" ] [ "." ] pname;
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
