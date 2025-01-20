@@ -38,7 +38,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.51";
+      url = "github:pythoneda-runtime-def/boot-infrastructure/0.0.52";
     };
     pythoneda-shared-pythonlang-application = {
       inputs.flake-utils.follows = "flake-utils";
@@ -47,7 +47,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/application/0.0.112";
+      url = "github:pythoneda-shared-pythonlang-def/application/0.0.113";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -68,8 +68,8 @@
       let
         org = "pythoneda-runtime";
         repo = "boot-application";
-        version = "0.0.4";
-        sha256 = "0gbxa1xgqmip81vlws7vh08ri55agpb0izbia71d1zpmdw9i3rka";
+        version = "0.0.5";
+        sha256 = "0xh6yw34i02qv1l27apcfl3clxs4s5vhjysx7585i1i2w3a01bzn";
         pname = "${org}-${repo}";
         pythonpackage = builtins.replaceStrings [ "-" ] [ "." ] pname;
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
